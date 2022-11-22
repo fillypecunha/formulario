@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Kaushan+Script&family=Ubuntu:wght@300;500;700&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+div, body, html{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body{
+    background-color: rgb(2, 18, 71);
+}
+
+div{
+    display: flex;
+    background-image: url(images/wp.jpeg);
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+
+.title{
+    color: rgb(236, 236, 236);
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+    height: 30px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+
+.section{
+    width: 30%;
+    height: 90%;
+    margin-top: 30px;
+}
+
+.b{
+    border: solid rgb(13, 102, 219);
+    background-color: rgb(2, 18, 71);
+}
+
+.form{
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.form_label{
+    display: block;
+    width: 90%;
+    height: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 20px;
+}
+
+.form_label span{
+    width: 150px;
+    height: 20px;
+    color: rgb(164, 164, 164);
+    cursor: text;
+    transition: all 300ms ease;
+}
+
+
+.inp{
+    width: 100%;
+    height: 25px;
+    background-color: rgb(2, 18, 71);
+    border: 0 none;
+    outline: 0;
+    border-bottom: solid rgb(203, 203, 203) 2px;
+    color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1em;
+}
+
+.label_sex{
+    width: 90%;
+    height: 20px;
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 30px 0px 0px 20px;
+    color: rgb(164, 164, 164);          
+}
+
+.label_sex input{
+    margin: 0px 5px 0px 0px;
+    display: inline;
+    width: 10px;
+    height: 20px;
+}
+
+.label_sex label{
+    display: inline;
+}
+
+
+.inp:focus{
+   background-color: rgb(10, 27, 80);
+   border-radius: 6px 6px 0px 0px;
+}
+
+.span-active{
+    font-size: 0.7em;
+}
+
+.date span{
+    width: 90%;
+    height: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 20px;
+    color: rgb(164, 164, 164); 
+}
+.date span input{
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 1.1em;
+    margin-left: 5%;
+    width: 40%;
+    height: 30px;
+}
+
+.button{
+    width: 95%;
+    height: 70px;
+    margin: 6% 0px 2% 2.5%;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    background-image: linear-gradient(45deg,rgb(39, 39, 244),rgb(48, 16, 142));
+}
+
+.button:hover{
+    background-image: linear-gradient(45deg,rgb(23, 23, 197),rgb(34, 13, 97));
+}
+
+.estado{
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 1.1em;
+    margin-left: 5%;
+    width: 40%;
+    height: 30px;
+}

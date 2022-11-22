@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script defer src="jquery.min.js"></script>
+    <script defer src="jquery.mask.min.js"></script>
+    <title>Meu Formulario</title>
+</head> 
+<body>
+    <div>
+     <section class="section">
+        <section class="b">
+            <form name="Form" class="form" >
+                <h1 class="title">Preencha o Formulario</h1>
+
+                <label class="form_label">
+                    <span>Nome Completo</span>
+                    <input class="inp"type="text" name="fname" minlength="3" maxlength="99" required>
+                </label>
+
+                <label class="form_label">
+                    <span>Email</span>
+                    <input class="inp"type="Email" name="femail" minlength="12"  maxlength="99" required>
+                </label>
+
+                <label class="form_label">
+                    <span>Telefone</span>
+                    <input class="inp" type="tel" name="ftelefone" minlength="14" data-mask="(00) 00000-0000" data-mask-selectonfocus="true">
+                </label>
+
+                <label class='label_sex'>
+                    <label>Sexo:</label><br>
+                    <input type="radio" name="sexo" value="Feminino" required>
+                    <label>Feminino</label><br>
+                    <input type="radio" name="sexo" value="Masculino" required>
+                    <label>Masculino</label><br>
+                    <input type="radio" name="sexo" value="Outros" required>
+                    <label>Outros</label>
+                </label><br><br><br><br><br><br>
+                <label class="date">
+                    <span>Data de Nascimento:<input type="date" name="fdate" max="2022-01-01" min="1900-01-01"required></span>
+                    
+                </label><br><br>
+
+                <label class="form_label">
+                    <span>Estado</span>
+                    <select name="estados" id="estad" class="estado">
+                        <option >Alagoas</option>
+                        <option >Acre</option>
+                        <option >Ámapa</option>
+                        <option >Amazonas</option>
+                        <option >Bahia</option>
+                        <option >Ceará</option>
+                        <option >Distrito Federal</option>
+                        <option >Espírito Santo</option>
+                        <option >Goiás</option>
+                        <option >Maranhão</option>
+                        <option >Mato Grosso</option>
+                        <option >Mato Grosso do Sul</option>
+                        <option >Minas Gerais</option>
+                        <option >Pará</option>
+                        <option >Paraíba</option>
+                        <option >Paraná</option>
+                        <option >Pernambuco</option>
+                        <option >Piauí</option>
+                        <option >Rio de Janeiro</option>
+                        <option >Rondônia</option>
+                        <option >Roraima</option>
+                        <option >Santa Catarina</option>
+                        <option >São Paulo</option>
+                        <option >Sergipe</option>
+                        <option >Tocantins</option>
+                    </select>
+                    
+                </label>
+
+                <label class="form_label">
+                    <span>Endereço Completo</span>
+                    <input class="inp"type="text" name="fendereço" minlength="5" maxlength="99" required>
+                </label>
+                <a href="pag.html">
+                <input type="submit" id="botao" class="button" value="Enviar" onclick="vereficar()">
+                </a>
+            </form>
+        </section>
+     </section>
+    </div>
+    
+</body>
+</html>
